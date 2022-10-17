@@ -1,11 +1,15 @@
 package com.project.software_project.Controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ResetPasswordController
 {
-
+@GetMapping(path = "/HI")
+public String Nasser()
+{
+    return "HI t";
 }
- cd ^[[200~C:\Users\Msys\IdeaProjects\Software_Project
+}
 
