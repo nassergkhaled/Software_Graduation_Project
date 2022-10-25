@@ -24,15 +24,15 @@ public class LogInController {
 
     public String LogIn(@RequestBody LogInBody Body)
     {
-        if(PlayerDao.LoginPlayerDao(Body.getId(),Body.getPassword()))
+        if(PlayerDao.LoginPlayerDao(Body.getEmail(),Body.getPassword()))
         {
             return "Success 'Player'";
         }
-        else if (CoachDao.LoginCoachDao(Body.getId(),Body.getPassword()))
+        else if (CoachDao.LoginCoachDao(Body.getEmail(),Body.getPassword()))
         {
             return "Success 'Coach'";
         }
-        else if (AdminDao.LoginAdminDao(Body.getId(),Body.getPassword()))
+        else if (AdminDao.LoginAdminDao(Body.getEmail(),Body.getPassword()))
         {
             return "Success 'Admin'";
         }

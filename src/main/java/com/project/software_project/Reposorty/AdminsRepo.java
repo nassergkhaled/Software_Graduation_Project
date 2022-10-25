@@ -5,5 +5,5 @@ import org.apache.el.parser.JJTELParserState;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AdminsRepo extends JpaRepository<AdminsEntity , Integer> {
-    public AdminsEntity findAllByIdAndPassword(Integer id, String password);
+    public AdminsEntity findAllByEmailAndPassword(String email, String password);
 }

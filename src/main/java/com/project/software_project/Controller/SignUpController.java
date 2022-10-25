@@ -20,15 +20,15 @@ public class SignUpController {
 
 
     @PostMapping(path = "/player")
-    public void SignUp(@RequestBody PlayersEntity Player)
+    public String SignUp(@RequestBody PlayersEntity Player)
     {
-        this.PlayerDao.SignUpPlayerDao(Player);
+        return this.PlayerDao.SignUpPlayerDao(Player);
     }
 
     @PostMapping(path = "/coach")
-    public void SignUp(@RequestBody CoachesEntity Coach)
+    public String SignUp(@RequestBody CoachesEntity Coach)
     {
-        this.CoachDao.SignUpCoachDao(Coach);
+        return this.CoachDao.SignUpCoachDao(Coach);
     }
 
 }
