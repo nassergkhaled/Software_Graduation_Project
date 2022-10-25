@@ -15,7 +15,6 @@ public class AdminsEntity {
     public Integer id;
     public Integer phone;
     public String email;
-    public String firstname;
-    public String lastname;
+    public String fullname;
     public String password;
 }

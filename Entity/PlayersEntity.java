@@ -12,9 +12,13 @@ public class PlayersEntity {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer id;
-    public Integer phone;
+    public String phone;
     public String email;
-    public String firstname;
-    public String lastname;
+    public String fullname;
     public String password;
+    public boolean gender;//0 -->Female  // 1 -->Male
+    public PlayerStrategy strategy;//1--> // Gym 2--> App // 3-->Personal
+    public float weight;
+    public float height;
+    public int age;
 }

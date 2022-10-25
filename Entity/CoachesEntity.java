@@ -13,10 +13,12 @@ public class CoachesEntity
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     public Integer id;
-    public Integer phone;
+    public String phone;
     public String email;
-    public String firstname;
-    public String lastname;
+    public String fullname;
     public String password;
-
+    public boolean gender;//0 -->Female  // 1 -->Male
+    public float weight;
+    public float height;
+    public int age;
 }
